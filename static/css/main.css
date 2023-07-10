@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background: rgb(15,8,136);
+    background: linear-gradient(90deg, rgba(15,8,136,1) 0%, rgba(29,29,223,1) 14%, rgba(0,212,255,1) 53%);
+}
+
+
+.content {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    padding: 0 20px; /* Add padding for better spacing */
+}
+
+
+#content {
+    width: 60%;
+}
+
+.add-task-button {
+    background-color: #4CAF50; /* Match the table header color */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 30%;
+}
+
+.add-task-button:hover {
+    background-color: #208824; /* Match the table row hover color */
+}
+
+
+/* Text Input */
+.text-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: 50%; /* Adjust the width to match the button */
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #eaf2f8;
+}
+
+.table tr:hover {
+    background-color: #2980b9;
+}
+
+
+.table a {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.table a:hover {
+    background-color: #45a049;
+}
+
+.table .action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table .action-buttons a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 3px; /* Adjust the margin to reduce the gap */
+}
+
+.table .action-buttons a.delete-button {
+    background-color: #b63029; /* Red color */
+}
+
+.table .action-buttons a.update-button {
+    background-color: #c1ab1e; /* Yellow color */
+}
+
